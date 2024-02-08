@@ -1,0 +1,15 @@
+name: build and deploy website
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  website-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+      - name: deploy
+        run: npm run deploy
