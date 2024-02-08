@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.f907f7ba.css",
+    "main.js": "/website/static/js/main.124fb149.js",
+    "static/media/HWYGWDE.woff": "/website/static/media/HWYGWDE.253e5fcd5dec01ddfa89.woff",
+    "index.html": "/website/index.html",
+    "main.f907f7ba.css.map": "/website/static/css/main.f907f7ba.css.map",
+    "main.124fb149.js.map": "/website/static/js/main.124fb149.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f907f7ba.css",
+    "static/js/main.124fb149.js"
+  ]
+}
