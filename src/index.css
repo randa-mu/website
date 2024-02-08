@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+    background-color: white;
+    height: 100%;
+    color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    font-family: "Lucida Grande", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Highway Gothic", serif;
+}
+
+#container, #root {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logos {
+    width: 80%;
+    height: 100%;
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logos > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.product {
+    height: 20em;
+}
+
+.product > * > img {
+    height: 12em;
+}
+
+#footer {
+    margin-bottom: 0.5em;
+}
+
+@media only screen
+and (max-width : 320px) {
+    body {
+        font-size: 0.7em;
+    }
+
+    .product > img, .product > * > img {
+        height: 8em;
+    }
+
+    #logos {
+        width: 100%;
+        margin: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    canvas {
+        display: none !important;
+    }
+}
+
+@font-face {
+    font-family: "Highway Gothic";
+    src: local("Highway Gothic"), url("../public/fonts/HWYGWDE.woff") format("woff");
 }
