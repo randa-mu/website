@@ -16,7 +16,10 @@ jobs:
         run: npm ci
 
       - name: 🌐 Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.email bob-the-builder@randa.mu
           git config --global user.name bob-the-builder
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/randa-mu/website.git
           npm run deploy
