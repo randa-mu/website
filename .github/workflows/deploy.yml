@@ -16,4 +16,7 @@ jobs:
         run: npm ci
 
       - name: 🌐 Deploy
-        run: npm run deploy
+        run: |
+          git config --global user.email bob-the-builder@randa.mu
+          git config --global user.name bob-the-builder
+          npm run deploy
