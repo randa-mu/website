@@ -5,7 +5,7 @@ import {BoxGeometry, CanvasTexture, EdgesGeometry, LineBasicMaterial} from "thre
 export function Dice() {
     const meshRef = useRef<any>()
 
-    const cubeSize = 2
+    const cubeSize = 3
 
     useFrame(() => {
         if (!!meshRef.current) {
