@@ -23,7 +23,7 @@ p {
     margin: 0;
 }
 
-#container, #root {
+#container {
     height: 100%;
     width: 100%;
 }
@@ -36,7 +36,6 @@ p {
 
 #logos {
     width: 100%;
-    margin: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
@@ -60,7 +59,17 @@ p {
 .product > * > img {
     height: 8em;
     max-width: 12em;
+}
 
+.randamu {
+    max-height: 30em !important;
+    max-width: 30em !important;
+}
+.randamu > * > img {
+    max-height: 15em !important;
+    max-width: 15em !important;
+    height: 15em !important;
+    width: 15em !important;
 }
 
 #footer {
